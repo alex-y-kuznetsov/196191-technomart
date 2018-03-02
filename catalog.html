@@ -11,10 +11,13 @@
     <section class="utilities">
       <div class="utilities__container">
         <div class="logo logo--header">
-          <a class="logo__link">Техномарт</a>
+          <a href="index.html" class="logo__link">Техномарт</a>
         </div>
         <div class="utilities__search">
-          <!-- Тут будет форма -->
+          <form action="https://htmlacademy.ru" method="get">
+            <input type="search" name="search-field" placeholder="Поиск">
+            <button type="submit"></button>
+          </form>
         </div>
         <a href="#" class="utilities__bookmarks">Закладки: 0</a>
         <a href="#" class="utilities__cart">Корзина: 10</a>
@@ -45,7 +48,7 @@
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a >Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -63,7 +66,7 @@
       <div class="breadcrumbs__container">
         <ul>
           <li><a href="index.html"><img src="#" alt="Главная"></a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a href="#">Перфораторы</a></li>
         </ul>
@@ -75,28 +78,51 @@
 
       <div class="catalog-page__container">
 
-        <section class="title-block">
-          <h2 class="title-block__heading">Перфораторы</h2>
-        </section>
+        <h1 class="catalog-page__title">Перфораторы</h1>
         
         <!-- Side Menu -->
         <aside class="filters">
+
           <h3 class="filters__title">Фильтр:</h3>
-          <!-- Тут будет форма -->
-          <div class="filters__price-range">
-            <h4>Цена:</h4>
-            <!-- Ползунок -->
-          </div>
-          <div class="filters__brands">
-            <h4>Производители:</h4>
-            <!-- Чекбокс -->
-          </div>
-          <div class="filters__power">
-            <h4>Питание:</h4>
-            <!-- Радиобаттоны -->
-          </div>
-          <button class="filters__show">Показать</button>
-          <!-- Конец формы -->
+
+          <form action="https://htmlacademy.ru" method="get">
+            <div class="price-range">
+              <h4>Цена:</h4>
+              <div class="price-range__scale">
+                <div class="price-range__bar"></div>
+              </div>
+              <div class="price-range__toggle price-range__toggle--min"></div>
+              <div class="price-range__toggle price-range__toggle--max"></div>
+            </div>
+            <div class="price-range__output">
+              <input type="text" name="price-low" value="0">
+              <input type="text" name="price-high" value="30000">
+            </div>
+
+            <div class="filters__brands">
+              <h4>Производители:</h4>
+              <input id="checkbox1" type="checkbox" value="Bosch" checked>
+              <label for="checkbox1">Bosch</label>
+              <input id="checkbox2" type="checkbox" value="Интерскол">
+              <label for="checkbox2">Интерскол</label>
+              <input id="checkbox3" type="checkbox" value="Makita" checked>
+              <label for="checkbox3">Makita</label>
+              <input id="checkbox4" type="checkbox" value="DeWALT">
+              <label for="checkbox4">DeWALT</label>
+              <input id="checkbox5" type="checkbox" value="Hitachi">
+              <label for="checkbox5">Hitachi</label>
+            </div>
+
+            <div class="filters__power">
+              <h4>Питание:</h4>
+              <input id="radio1" name="power" type="radio" value="Аккумуляторные" checked>
+              <label for="radio1">Аккумуляторные</label>
+              <input id="radio2" name="power" type="radio" value="Сетевые">
+              <label for="radio2">Сетевые</label>
+            </div>
+            <button type="submit" class="filters__show">Показать</button>
+          </form>
+
         </aside>
         
         <!-- Sort  -->
@@ -177,7 +203,7 @@
             <a href="#" class="shop-item__buy">12500 Р</a>
           </article>
 
-          <div class="shop-items__contents">
+          <div class="shop-items__pagination">
             <ul>
               <li><a class="shop-items__page shop-items__page--current"></a>1</li>
               <li><a href="#" class="shop-items__page">2</a></li>
@@ -211,17 +237,17 @@
 
       <section class="navigation">
         <div class="logo logo--footer">
-          <a class="logo__link">Техномарт</a>
+          <a href="index.html" class="logo__link">Техномарт</a>
         </div>
-        <nav class="navigation--footer">
+        <div class="navigation navigation--footer">
           <ul>
-            <li><a href="#">Компания</a></li>
+            <li><a href="index.html">Компания</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a>Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-        </nav>
+        </div>
       </section>
 
       <section class="footer__catalog">
