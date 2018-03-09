@@ -37,9 +37,15 @@
           </div>
           <div class="user-block__user-menu">
             <a href="#" class="user-block__profile">Равшан Джамшутович</a>
-            <a href="#" class="user-block__logout"></a>
+            <a href="#" class="user-block__logout" aria-label="Выйти из учетной записи"></a>
             <a href="#" class="user-block__my-orders">Мои заказы</a>
             <a href="#" class="user-block__cabinet">Личный кабинет</a>
+          </div>
+          <div class="modal added-notification">
+            <button class="close-modal" type="button">Закрыть</button>
+            <p cclass="added-notification__success">Товар добавлен в корзину</p>
+            <a href="#" class="added-notification__order">Оформить заказ</a>
+            <button class="added-notification__continue-shopping">Продолжить покупки</button>
           </div>
         </div>
       </section>
@@ -101,25 +107,47 @@
               </div>
 
               <div class="filters__brands">
-                <h4>Производители:</h4>
-                <input id="checkbox1" type="checkbox" value="Bosch" checked>
-                <label for="checkbox1">Bosch</label>
-                <input id="checkbox2" type="checkbox" value="Интерскол">
-                <label for="checkbox2">Интерскол</label>
-                <input id="checkbox3" type="checkbox" value="Makita" checked>
-                <label for="checkbox3">Makita</label>
-                <input id="checkbox4" type="checkbox" value="DeWALT">
-                <label for="checkbox4">DeWALT</label>
-                <input id="checkbox5" type="checkbox" value="Hitachi">
-                <label for="checkbox5">Hitachi</label>
+                <fieldset>
+                  <legend>Производители:</legend>
+                  <ul>
+                    <li>
+                      <input id="checkbox1" type="checkbox" value="Bosch" checked>
+                      <label for="checkbox1">Bosch</label>
+                    </li>
+                    <li>
+                      <input id="checkbox2" type="checkbox" value="Интерскол">
+                      <label for="checkbox2">Интерскол</label>
+                    </li>
+                    <li>
+                      <input id="checkbox3" type="checkbox" value="Makita" checked>
+                      <label for="checkbox3">Makita</label>
+                    </li>
+                    <li>
+                      <input id="checkbox4" type="checkbox" value="DeWALT">
+                      <label for="checkbox4">DeWALT</label>
+                    </li>
+                    <li>
+                      <input id="checkbox5" type="checkbox" value="Hitachi">
+                      <label for="checkbox5">Hitachi</label>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
 
               <div class="filters__power">
-                <h4>Питание:</h4>
-                <input id="radio1" name="power" type="radio" value="Аккумуляторные" checked>
-                <label for="radio1">Аккумуляторные</label>
-                <input id="radio2" name="power" type="radio" value="Сетевые">
-                <label for="radio2">Сетевые</label>
+                <fieldset>
+                  <legend>Питание:</legend>
+                  <ul>
+                    <li>
+                      <input id="radio1" name="power" type="radio" value="Аккумуляторные" checked>
+                      <label for="radio1">Аккумуляторные</label>
+                    </li>
+                    <li>
+                      <input id="radio2" name="power" type="radio" value="Сетевые">
+                      <label for="radio2">Сетевые</label>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
               <button type="submit" class="filters__show">Показать</button>
             </form>
@@ -135,8 +163,8 @@
               <li><a href="#">По функционалу</a></li>
             </ul>
             <ul>
-              <li><a href="#" class="sort-by__order sort-by__order--up"></a></li>
-              <li><a href="#" class="sort-by__order sort-by__order--down"></a></li>
+              <li><a href="#" class="sort-by__order sort-by__order--up" aria-label="Сортировка снизу вверх"></a></li>
+              <li><a href="#" class="sort-by__order sort-by__order--down" aria-label="Сортировка сверху вниз"></a></li>
             </ul>
           </section>
           
@@ -267,9 +295,9 @@
         <section class="reference">
           <p class="copyright">&copy; 2010–2017 Компания «Техномарт» Все права защищены</p>
           <ul class="footer__social">
-            <li><a href="#"><img src="img/icon-vk.svg" width="28" height="16" alt="Vkontakte"></a></li>
-            <li><a href="#"><img src="img/icon-fb.svg" width="12" height="23" alt="Facebook"></a></li>
-            <li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
+            <li><a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="28" height="16" alt="Vkontakte"></a></li>
+            <li><a href="#" aria-label="Фэйсбук"><img src="img/icon-fb.svg" width="12" height="23" alt="Facebook"></a></li>
+            <li><a href="#" aria-label="Инстаграм"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
           </ul>
           <div class="feedback">
             <p class="feedback__email"><b>Обратная связь:</b><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>

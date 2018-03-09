@@ -214,10 +214,33 @@
           </div>
 
           <div class="contacts">
+
             <h2 class="contacts__title">КОНТАКТЫ</h2>
             <p class="contacts__info">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="#"><img src="img/map--small.png" width="300" height="158" class="contacts__map" alt="Как добраться"></a>
+            <a href="#"><img src="img/map--small.png" width="300" height="158" class="contacts__map--small" alt="Как добраться"></a>
             <a href="#" class="contacts__contact-us">Заблудились? Напишите нам!</a>
+
+            <div class="modal contacts__map--enlarged">
+              <h2 class="visually-hidden">Как до нас добраться</h2>
+              <button class="close-modal" type="button">Закрыть</button>
+              <img src="img/map--large.png" width="940" height="447" class="contacts__map--large" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            </div>
+
+          </div>
+
+          
+
+          <div class="modal write-us">
+            <form class="write-us__form" action="https://htmlacademy.ru" method="get">
+              <button class="close-modal" type="button">Закрыть</button>
+              <label for="write-us__name">Ваше имя</label>
+              <input type="text" name="user-name" id="write-us__name" placeholder="Представьтесь, пожалуйста">
+              <label for="write-us__email">Ваш e-mail</label>
+              <input type="email" name="user-email" id="write-us__email" placeholder="Для отправки ответа">
+              <label for="write-us__letter">Текст письма</label>
+              <textarea id="write-us__letter">В свободной форме</textarea>
+              <button class="write-us__send" type="submit">Отправить</button>
+            </form>
           </div>
 
         </div>
@@ -261,9 +284,9 @@
         <section class="reference">
           <p class="copyright">&copy; 2010–2017 Компания «Техномарт» Все права защищены</p>
           <ul class="footer__social">
-            <li><a href="#"><img src="img/icon-vk.svg" width="28" height="16" alt="Vkontakte"></a></li>
-            <li><a href="#"><img src="img/icon-fb.svg" width="12" height="23" alt="Facebook"></a></li>
-            <li><a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
+            <li><a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="28" height="16" alt="Vkontakte"></a></li>
+            <li><a href="#" aria-label="Фэйсбук"><img src="img/icon-fb.svg" width="12" height="23" alt="Facebook"></a></li>
+            <li><a href="#" aria-label="Инстаграм"><img src="img/icon-insta.svg" width="21" height="21" alt="Instagram"></a></li>
           </ul>
           <div class="feedback">
             <p class="feedback__email"><b>Обратная связь:</b><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
