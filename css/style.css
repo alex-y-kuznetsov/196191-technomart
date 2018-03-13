@@ -1,0 +1,279 @@
+/*Global*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header*/
+
+/*Utilities*/
+
+.utilities {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.utilities a {
+  color: #ffffff;
+}
+
+.utilities a:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.utilities__bookmarks:hover,
+.utilities__cart:hover,
+.utilities__search input:hover {
+  background-color: #212a3a;
+}
+
+.utilities__bookmarks:active,
+.utilities__cart:active {
+  background-color: #161d29;
+}
+
+.utilities__search input {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.utilities__search input:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.logo__link {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.logo__link:hover {
+  background-color: #ca2c37;
+}
+
+.logo__link:active {
+  background-color: #ba2732;
+}
+
+.utilities__order {
+  background-color: #63a63e;
+}
+
+.utilities__order:hover {
+  background-color: #5fbb2d;
+}
+
+.utilities__order:active {
+  background-color: #518534;
+}
+
+/*User Block*/
+
+.user-block,
+.navigation {
+  background-color: #f3f7f8;
+}
+
+.user-block__motto,
+.user-block__phone {
+  color: #ee3643;
+}
+
+.user-block__motto {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.user-block__phone {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-block__address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-block__controls {
+  list-style: none;
+}
+
+.user-block__controls a,
+.user-block__user-menu a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-block__my-orders,
+.user-block__cabinet {
+  color: #32425c;
+}
+
+.user-block__controls a:hover,
+.user-block__my-orders:hover,
+.user-block__cabinet:hover {
+  color: #ee3643;
+}
+
+.user-block__controls a:active,
+.user-block__profile:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-block__my-orders:active,
+.user-block__cabinet:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+/*Navigation*/
+
+.navigation__container {
+  background-color: #32425c;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation a {
+  color: #ffffff;
+  line-height: 18px;
+}
+
+.navigation a:hover {
+  background-color: #293449;
+}
+
+.navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*Main Index*/
+
+/*Features*/
+
+.features__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.features__more {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features__more:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features__more:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.features__item--yellow {
+  background-color: #ffbf47;
+}
+
+.features__item--blue {
+  background-color: #3bbce3;
+}
+
+.features__item--purple {
+  background-color: #dc91d8;
+}
+
+.features__item--green {
+  background-color: #8ed78f;
+}
+
+.slide__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.slide__description {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.slide__link {
+  background-color: #ee3643;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slide__link:hover {
+  background-color: #ca2c37;
+}
+
+.slide__link:active {
+  background-color: #ba2732;
+}
+
+.slider__pager {
+  list-style: none;
+}
+
+/*Title Block*/
+
+.title-block {
+  background-color: #f9f5f0;
+}
+
+.title-block__heading {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.title-block__more {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+/*Popular*/
+
+.shop-item {
+  font-family: "PT Sans", Arial. sans-serif;
+}
+
+.shop-item__title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.shop-item__price-before {
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
