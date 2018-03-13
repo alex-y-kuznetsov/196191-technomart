@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/mormalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -80,8 +83,28 @@
             <a href="#" class="features__more">Для стройки</a>
           </div>
 
-          <div class="features__slider">
-            <!-- Тут будет слайдер -->
+          <div class="slider features__slider">
+
+            <article class="slide slide--drills">
+              <h1 class="slide__title">Дрели</h1>
+              <span class="slide__description">Соседям на радость</span>
+              <a href="catalog.html" class="slide__link">Открыть каталог</a>
+            </article>
+
+            <article class="slide slide--punchers">
+              <h1 class="slide__title">Перфораторы</h1>
+              <span class="slide__description">Настоящие мужские игрушки</span>
+              <a href="catalog.html" class="slide__link">Открыть каталог</a>
+            </article>
+
+            <button type="button" aria-label="Предыдущий слайд" class="cycle-prev"><</button>
+            <button type="button" aria-label="Следующий слайд" class="cycle-next">></button>
+
+            <ul class="pager slider__pager">
+              <li><a href="#" class="pager__button">1</a></li>
+              <li><a href="#" class="pager__button">2</a></li>
+            </ul>
+
           </div>
 
           <div class="features__item features__item--green">
@@ -145,7 +168,7 @@
           </section>
 
           <section class="manufacturers">
-            
+
             <ul>
               <li><a href=""><img src="img/logo-bosch.png" class="manufacturers__item" alt="BOSCH"></a></li>
               <li><a href=""><img src="img/logo-makita.png" width="123" height="40" class="manufacturers__item" alt="Makita"></a></li>
@@ -193,7 +216,7 @@
           </div>
 
         </div>
-        
+
       </section>
 
       <!-- About us -->
@@ -228,7 +251,7 @@
 
           </div>
 
-          
+
 
           <div class="modal write-us">
             <form class="write-us__form" action="https://htmlacademy.ru" method="get">
@@ -294,9 +317,9 @@
           </div>
 
         </section>
-        
+
       </div>
-    	
+
     </footer>
 
   </body>
