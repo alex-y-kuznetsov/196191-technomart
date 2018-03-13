@@ -256,6 +256,8 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*Popular*/
@@ -268,6 +270,7 @@ a {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  font-weight: bold;
 }
 
 .shop-item__price-before {
@@ -276,4 +279,230 @@ a {
   color: #a9a9a9;
   text-decoration: line-through;
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+.shop-item__buy {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*Manufacturers*/
+
+/*Services*/
+
+.services {
+  background-color: #f4f8f9;
+}
+
+.services__title,
+.resume__title,
+.contacts__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services__info,
+.resume__info,
+.contacts__info,
+.fact__info {
+  font-family: "PT Sans", Arial. sans-serif;
+  foont-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services__button {
+  background-color: #32425c;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.services_button--active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.services__button:hover {
+  background-color: #293449;
+}
+
+.description__title {
+  color: #32425c;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.description__info {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+/*About Us*/
+
+.resume__transport {
+  list-style: none;
+}
+
+.resume__transport li {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.resume__more,
+.contcts__contact-us {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+
+/*Footer*/
+
+.footer__navigation,
+.footer__catalog {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.reference {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.footer__address,
+.footer-phone,
+.copyright,
+.feedback {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.footer__phone {
+  color: #ffffff;
+}
+
+.feedback__email,
+.feedback__developed-by a {
+  color: #ffd180;
+}
+
+.footer__catalog ul {
+  list-style: none;
+}
+
+.jump-to a {
+  tect-decoration: none;
+  color: #ffd180;
+}
+
+.footer__social {
+  list-style: none;
+}
+
+
+/*Catalog*/
+
+/*Breadcrumbs*/
+
+.breadcrumbs ul {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/*Catalog Page*/
+
+.catalog-page__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #f2f6f8;
+}
+
+/*Side-menu*/
+
+.filters__title {
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.price-range h4,
+.filters legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.price-range__output {
+  font-family: "PT Sans", Arial, sans-serif;;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filters ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+
+/*Sort By*/
+
+.sort-by {
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 18px;
+}
+
+.sort-by ul {
+  list-style: none;
+}
+
+.sort-by__option {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-by__option--active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.sort-by__option:hover {
+  color: #000000;
+}
+
+/*Shop Items*/
+
+.shop-items__pagination ul {
+  list-style: none;
+}
+
+/*Facts*/
+
+.fact {
+  background-color: #f2f6f8;
 }
