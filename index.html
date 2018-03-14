@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/mormalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -243,25 +243,6 @@
             <a href="#"><img src="img/map--small.png" width="300" height="158" class="contacts__map--small" alt="Как добраться"></a>
             <a href="#" class="contacts__contact-us btn btn--red">Заблудились? Напишите нам!</a>
 
-            <div class="modal contacts__map--enlarged">
-              <h2 class="visually-hidden">Как до нас добраться</h2>
-              <button class="close-modal" type="button">Закрыть</button>
-              <img src="img/map--large.png" width="940" height="447" class="contacts__map--large" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-            </div>
-
-          </div>
-
-          <div class="modal write-us">
-            <form class="write-us__form" action="https://htmlacademy.ru" method="get">
-              <button class="close-modal" type="button">Закрыть</button>
-              <label for="write-us__name">Ваше имя</label>
-              <input class="write-us__field" type="text" name="user-name" id="write-us__name" placeholder="Представьтесь, пожалуйста">
-              <label for="write-us__email">Ваш e-mail</label>
-              <input class="write-us__field" type="email" name="user-email" id="write-us__email" placeholder="Для отправки ответа">
-              <label for="write-us__letter">Текст письма</label>
-              <textarea class="write-us__field" id="write-us__letter">В свободной форме</textarea>
-              <button class="write-us__send btn btn--red" type="submit">Отправить</button>
-            </form>
           </div>
 
         </div>
@@ -319,6 +300,25 @@
       </div>
 
     </footer>
+
+    <div class="modal contacts__map--enlarged">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button class="close-modal" type="button">Закрыть</button>
+      <img src="img/map--large.png" width="940" height="447" class="contacts__map--large" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </div>
+
+    <div class="modal write-us">
+      <form class="write-us__form" action="https://htmlacademy.ru" method="get">
+        <button class="close-modal" type="button">Закрыть</button>
+        <label for="write-us__name">Ваше имя</label>
+        <input class="write-us__field" type="text" name="user-name" id="write-us__name" placeholder="Представьтесь, пожалуйста">
+        <label for="write-us__email">Ваш e-mail</label>
+        <input class="write-us__field" type="email" name="user-email" id="write-us__email" placeholder="Для отправки ответа">
+        <label for="write-us__letter">Текст письма</label>
+        <textarea class="write-us__field" id="write-us__letter">В свободной форме</textarea>
+        <button class="write-us__send btn btn--red" type="submit">Отправить</button>
+      </form>
+    </div>
 
   </body>
 </html>
