@@ -17,6 +17,27 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--red {
+  background-color: #ee3643;
+}
+
+.btn--red:hover {
+  background-color: #ca2c37;
+}
+
+.btn--red:active {
+  background-color: #ba2732
+}
+
 /*Header*/
 
 /*Utilities*/
@@ -179,9 +200,6 @@ a {
 }
 
 .features__more {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -221,20 +239,6 @@ a {
   color: #ffffff;
 }
 
-.slide__link {
-  background-color: #ee3643;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.slide__link:hover {
-  background-color: #ca2c37;
-}
-
-.slide__link:active {
-  background-color: #ba2732;
-}
-
 .slider__pager {
   list-style: none;
 }
@@ -249,15 +253,6 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-}
-
-.title-block__more {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: #ee3643;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 /*Popular*/
@@ -359,15 +354,24 @@ a {
   line-height: 20px;
 }
 
-.resume__more,
-.contcts__contact-us {
-  font-size: 14px;
+/*Modal Write Us*/
+
+.write-us__form label {
+  font-size: 18px;
   line-height: 18px;
-  background-color: #ee3643;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 
+.write-us__field {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.write-us__send {
+  border: none;
+  font-family: "Cuprum", Arial, sans-serif;
+}
 
 /*Footer*/
 
@@ -395,7 +399,7 @@ a {
   color: #ffffff;
 }
 
-.feedback__email,
+.feedback__email a,
 .feedback__developed-by a {
   color: #ffd180;
 }
@@ -412,7 +416,6 @@ a {
 .footer__social {
   list-style: none;
 }
-
 
 /*Catalog*/
 
@@ -436,6 +439,22 @@ a {
   font-size: 30px;
   line-height: 30px;
   background-color: #f2f6f8;
+}
+
+/*Modal Notification*/
+
+.added-notification__success {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.added-notification__continue-shopping {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 /*Side-menu*/
@@ -467,7 +486,6 @@ a {
   list-style: none;
   text-transform: uppercase;
 }
-
 
 /*Sort By*/
 
