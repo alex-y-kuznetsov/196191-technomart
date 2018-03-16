@@ -1,5 +1,15 @@
 /*Global*/
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -38,6 +48,11 @@ a {
   background-color: #ba2732
 }
 
+[class$="container"] {
+  width: 940px;
+  margin: 0 auto;
+}
+
 /*Header*/
 
 /*Utilities*/
@@ -45,6 +60,10 @@ a {
 .utilities {
   background-color: #293449;
   color: #ffffff;
+}
+
+.utilities__container {
+  display: flex;
 }
 
 .utilities a {
