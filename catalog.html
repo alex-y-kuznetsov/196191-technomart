@@ -39,10 +39,14 @@
             <p class="user-block__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="user-block__user-menu">
-            <a href="#" class="user-block__profile user-btn">Равшан Джамшутович</a>
-            <a href="#" class="user-block__logout" aria-label="Выйти из учетной записи"></a>
-            <a href="#" class="user-block__my-orders">Мои заказы</a>
-            <a href="#" class="user-block__cabinet">Личный кабинет</a>
+            <div class="user-block__primary">
+              <a href="#" class="user-block__profile user-btn">Равшан Джамшутович</a>
+              <a href="#" class="user-block__logout" aria-label="Выйти из учетной записи"></a>
+            </div>
+            <div class="user-block__secondary">
+              <a href="#" class="user-block__my-orders">Мои заказы</a>
+              <a href="#" class="user-block__cabinet">Личный кабинет</a>
+            </div>
           </div>
         </div>
       </section>
@@ -158,7 +162,7 @@
               <!-- Sort  -->
               <section class="sort-by">
                 <h3 class="sort-by__title">Сортировка:</h3>
-                <ul>
+                <ul class="sort-by__options">
                   <li><a href="#" class="sort-by__option sort-by__option--active">По цене</a></li>
                   <li><a href="#" class="sort-by__option">По типу</a></li>
                   <li><a href="#" class="sort-by__option">По функционалу</a></li>
@@ -282,8 +286,10 @@
 
       <section class="footer__catalog">
         <div class="footer__container">
-          <span class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          <a href="tel:+78125550555" class="footer__phone">+7 (812) 555-05-55</a>
+          <div class="footer__contacts">
+            <span class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            <a href="tel:+78125550555" class="footer__phone">+7 (812) 555-05-55</a>
+          </div>
           <nav class="jump-to">
             <ul>
               <li><a href="#">Материалы</a></li>

@@ -34,6 +34,10 @@ a {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  text-align: center;
+
+  padding: 11px 0;
+  border-radius: 2px;
 }
 
 .user-btn {
@@ -42,7 +46,7 @@ a {
   color: #000000;
   background-color: #ffffff;
 
-  padding: 11px 0;
+  padding: 11px 25px;
 }
 
 .btn--red {
@@ -181,17 +185,25 @@ a {
   font-style: italic;
 
   width: 200px;
+  margin: 0;
 }
 
 .user-block__phone {
   font-size: 21px;
   line-height: 21px;
+
+  border: 3px solid #ffffff;
+  padding: 11px 0 8px 0;
+  width: 270px
 }
 
 .user-block__address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+
+  margin: 0;
+  padding-top: 18px;
 }
 
 .user-block__controls {
@@ -200,12 +212,46 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
+}
+
+.user-block__controls li:first-child {
+  width: 120px;
+}
+
+.user-block__controls li:last-child {
+  width: 150px;
 }
 
 .user-block__controls a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+}
+
+.user-block__secondary {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.user-block__secondary a {
+  text-decoration: underline;
+}
+
+.user-block__secondary a:hover {
+  color: #ee3643;
+}
+
+.user-block__secondary a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.user-block__my-orders {
+  margin-right: 34px;
+}
+
+.user-block__profile {
+  padding: 11px 70px 11px 48px;
 }
 
 .user-block__my-orders,
@@ -248,9 +294,15 @@ a {
   justify-content: space-around;
 }
 
+.navigation li {
+  padding: 19px 0 22px 0;
+}
+
 .navigation a {
   color: #ffffff;
   line-height: 18px;
+
+  padding: 18px 33px 22px 33px;
 }
 
 .navigation a:hover {
@@ -365,6 +417,7 @@ a {
 
 .title-block__more {
   align-self: center;
+  width: 253px;
 }
 
 .title-block__heading {
@@ -504,6 +557,12 @@ a {
   background-color: #293449;
 }
 
+.services__button--active:hover {
+  background-color: #ffffff;
+  color: #32425c;
+  cursor: default;
+}
+
 .description__title {
   color: #32425c;
   font-size: 36px;
@@ -542,11 +601,17 @@ a {
 
 .resume__transport {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .resume__transport li {
   font-size: 18px;
   line-height: 20px;
+}
+
+.resume__more {
+  width: 220px;
 }
 
 /*Modal Write Us*/
@@ -637,11 +702,30 @@ a {
   justify-content: space-between;
 }
 
+.navigation--footer a:hover,
+.jump-to a:hover {
+  background-color: #32425c;
+  text-decoration: underline;
+}
+
+.navigation--footer a:active,
+.jump-to a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .jump-to ul {
   list-style: none;
 
   display: flex;
   justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+  width: 540px;
+}
+
+.jump-to li {
+  padding: 19px 0 22px 0;;
 }
 
 .reference {
@@ -674,6 +758,18 @@ a {
 
 .feedback {
   display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+}
+
+.feedback > * {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback p {
+  margin: 0;
 }
 
 .feedback__email a,
@@ -683,13 +779,11 @@ a {
   display: block;
 }
 
-.footer__catalog ul {
-  list-style: none;
-}
-
 .jump-to a {
   tect-decoration: none;
   color: #ffd180;
+
+  padding: 18px 20px 22px 20px;
 }
 
 .footer__social {
@@ -698,8 +792,10 @@ a {
   padding: 0;
   margin: 0;
 
+  width: 133px;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -841,7 +937,7 @@ a {
 
 .sort-by__title {
   margin: 0;
-  margin-right: 140px;
+  margin-right: 80px;
 }
 
 .sort-by ul {
@@ -852,6 +948,10 @@ a {
 
   padding: 0;
   margin: 0;
+}
+
+.sort-by__options {
+  width: 380px;
 }
 
 .sort-by__option {
