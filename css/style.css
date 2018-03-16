@@ -496,7 +496,8 @@ a {
 
 /*Modal Write Us*/
 
-.write-us {
+.write-us,
+.added-notification {
   width: 620px;
   margin: 0 auto;
 }
@@ -540,7 +541,7 @@ a {
   width: 100%;
 }
 
-.write-us__button {
+.modal__button {
   background-color: #f4f4f4;
 
   padding: 37px 0;
@@ -651,8 +652,22 @@ a {
 
 /*Breadcrumbs*/
 
+.breadcrumbs {
+  padding-top: 23px;
+  padding-bottom: 24px;
+}
+
 .breadcrumbs ul {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+}
+
+.breadcrumbs li {
+  margin-right: 40px;
 }
 
 .breadcrumbs a {
@@ -664,11 +679,19 @@ a {
 
 /*Catalog Page*/
 
+.catalog-page {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-page__title {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
   background-color: #f2f6f8;
+
+  margin: 0;
+  padding: 28px 0 28px 30px;
 }
 
 /*Modal Notification*/
@@ -688,6 +711,10 @@ a {
 }
 
 /*Side-menu*/
+
+.filters {
+  width: 220px;
+}
 
 .filters__title {
   background-color: #f7f3ec;
