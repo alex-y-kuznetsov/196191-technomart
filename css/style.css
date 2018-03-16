@@ -36,6 +36,15 @@ a {
   cursor: pointer;
 }
 
+.user-btn {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+
+  padding: 11px 0;
+}
+
 .btn--red {
   background-color: #ee3643;
 }
@@ -109,6 +118,9 @@ a {
 
   display: block;
   width: 220px;
+
+  padding: 11px 0 12px 0;
+  text-align: center;
 }
 
 .logo__link:hover {
@@ -123,6 +135,9 @@ a {
 .utilities__cart,
 .utilities__order {
   width: 150px;
+
+  padding: 11px 0 12px 0;
+  text-align: center;
 }
 
 
@@ -181,10 +196,13 @@ a {
 
 .user-block__controls {
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
-.user-block__controls a,
-.user-block__user-menu a {
+.user-block__controls a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -448,11 +466,14 @@ a {
   color: #000000;
 
   margin: 0;
+  padding-bottom: 30px;
 }
 
 .services__info {
   margin: 0;
   width: 400px;
+
+  padding-bottom: 70px;
 }
 
 .services__info,
@@ -470,6 +491,8 @@ a {
   color: #ffffff;
   font-size: 21px;
   line-height: 30px;
+
+  padding: 15px 0 21px 22px;
 }
 
 .services__button--active {
@@ -741,6 +764,12 @@ a {
   width: 220px;
 }
 
+.filters fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .filters__title {
   background-color: #f7f3ec;
   font-family: "PT Sans", Arial, sans-serif;
@@ -759,17 +788,40 @@ a {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+
+  margin: 0;
+}
+
+.price-range h4 {
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+
+.filters legend {
+  padding-top: 22px;
+  padding-bottom: 18px;
 }
 
 .price-range__output {
   font-family: "PT Sans", Arial, sans-serif;;
   font-size: 17px;
   line-height: 30px;
+
+  padding-top: 9px;
+  padding-bottom: 26px;
 }
 
 .filters ul {
   list-style: none;
   text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+}
+
+.filters__brands li,
+.filters__power li {
+  padding-bottom: 23px;
 }
 
 /*Sort By*/
