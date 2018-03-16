@@ -252,11 +252,38 @@ a {
   padding-bottom: 53px;
 }
 
+.features__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__wrapper {
+  display: flex;
+}
+
+.features__wrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features__wrapper--right {
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.features__item {
+  width: 300px;
+
+  padding: 23px;
+}
+
 .features__title {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   font-weight: bold;
+
+  margin: 0;
 }
 
 .features__more {
@@ -285,6 +312,10 @@ a {
 
 .features__item--green {
   background-color: #8ed78f;
+}
+
+.slider {
+  width: 620px;
 }
 
 .slide__title {
