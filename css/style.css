@@ -409,7 +409,8 @@ a {
 
 .services__title,
 .resume__title,
-.contacts__title {
+.contacts__title,
+.fact__title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -694,21 +695,14 @@ a {
   padding: 28px 0 28px 30px;
 }
 
-/*Modal Notification*/
+.shop-interface {
+  display: flex;
+  justify-content: space-between;
 
-.added-notification__success {
-  font-size: 30px;
-  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
-.added-notification__continue-shopping {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-}
 
 /*Side-menu*/
 
@@ -722,6 +716,9 @@ a {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+
+  margin: 0;
+  padding: 12px 17px 12px 19px;
 }
 
 .price-range h4,
@@ -750,11 +747,28 @@ a {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  font-weight: 18px;
+  line-height: 18px;
+  background-color: #f7f3ec;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 12px 17px 12px 19px;
+}
+
+.sort-by__title {
+  margin: 0;
+  margin-right: 140px;
 }
 
 .sort-by ul {
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
 }
 
 .sort-by__option {
@@ -770,14 +784,58 @@ a {
   color: #000000;
 }
 
-/*Shop Items*/
+/*Shop Content*/
+
+.shop-content {
+  width: 700px;
+}
 
 .shop-items__pagination ul {
   list-style: none;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-top: 20px;
+}
+
+.shop-items__pagination ul {
+  display: flex;
+  justify-content: space-between;
+
+  width: 285px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 52px;
 }
 
 /*Facts*/
 
 .fact {
   background-color: #f2f6f8;
+}
+
+.fact {
+  padding-top: 63px;
+  padding-bottom: 73px;
+}
+
+/*Modal Notification*/
+
+.added-notification__success {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.added-notification__continue-shopping {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
