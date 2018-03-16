@@ -193,26 +193,30 @@
           <h2 class="services__title">Сервисы</h2>
           <p class="services__info">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
-          <div class="services__menu">
-            <a href="#" class="services__button services__button--delivery services__button--active">Доставка</a>
-            <a href="#" class="services__button services__button--warranty">Гарантия</a>
-            <a href="#" class="services__button services__button--credit">Кредит</a>
-          </div>
+          <div class="services__content">
 
-          <div class="services__description description services__description--delivery">
-            <h3 class="description__title">Доставка</h3>
-            <p class="description__info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </div>
+            <div class="services__menu">
+              <a href="#" class="services__button services__button--delivery services__button--active">Доставка</a>
+              <a href="#" class="services__button services__button--warranty">Гарантия</a>
+              <a href="#" class="services__button services__button--credit">Кредит</a>
+            </div>
 
-          <div class="services__description description services__description--warranty">
-            <h3 class="description__title">Гарантия</h3>
-            <p class="description__info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-          </div>
+            <div class="services__description description services__description--delivery">
+              <h3 class="description__title">Доставка</h3>
+              <p class="description__info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </div>
 
-          <div class="services__description description services__description--credit">
-            <h3 class="description__title">Кредит</h3>
-            <p class="description__info">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a href="#" class="description__apply btn btn--red">ОТПРАВИТЬ ЗАЯВКУ</a>
+            <div class="services__description description services__description--warranty">
+              <h3 class="description__title">Гарантия</h3>
+              <p class="description__info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </div>
+
+            <div class="services__description description services__description--credit">
+              <h3 class="description__title">Кредит</h3>
+              <p class="description__info">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <a href="#" class="description__apply btn btn--red">ОТПРАВИТЬ ЗАЯВКУ</a>
+            </div>
+
           </div>
 
         </div>
@@ -272,8 +276,10 @@
 
       <section class="footer__catalog">
         <div class="footer__container">
-          <span class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-          <a href="tel:+78125550555" class="footer__phone">+7 (812) 555-05-55</a>
+          <div class="footer__contacts">
+            <span class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            <a href="tel:+78125550555" class="footer__phone">+7 (812) 555-05-55</a>
+          </div>
           <nav class="jump-to">
             <ul>
               <li><a href="#">Материалы</a></li>
@@ -311,13 +317,28 @@
     <div class="modal write-us">
       <form class="write-us__form" action="https://htmlacademy.ru" method="get">
         <button class="close-modal" type="button">Закрыть</button>
-        <label for="write-us__name">Ваше имя</label>
-        <input class="write-us__field" type="text" name="user-name" id="write-us__name" placeholder="Представьтесь, пожалуйста">
-        <label for="write-us__email">Ваш e-mail</label>
-        <input class="write-us__field" type="email" name="user-email" id="write-us__email" placeholder="Для отправки ответа">
-        <label for="write-us__letter">Текст письма</label>
-        <textarea class="write-us__field" id="write-us__letter">В свободной форме</textarea>
-        <button class="write-us__send btn btn--red" type="submit">Отправить</button>
+
+        <div class="write-us__personal-data">
+
+          <div class="write-us__half-width">
+            <label for="write-us__name">Ваше имя</label>
+            <input class="write-us__field" type="text" name="user-name" id="write-us__name" placeholder="Представьтесь, пожалуйста">
+          </div>
+
+          <div class="write-us__half-width">
+            <label for="write-us__email">Ваш e-mail</label>
+            <input class="write-us__field" type="email" name="user-email" id="write-us__email" placeholder="Для отправки ответа">
+          </div>
+
+        </div>
+
+        <div class="write-us__full-width">
+          <label for="write-us__letter">Текст письма</label>
+          <textarea class="write-us__field" id="write-us__letter">В свободной форме</textarea>
+        </div>
+        <div class="write-us__button">
+          <button class="write-us__send btn btn--red" type="submit">Отправить</button>
+        </div>
       </form>
     </div>
 
