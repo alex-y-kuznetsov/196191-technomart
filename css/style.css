@@ -21,6 +21,8 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+
+  position: relative;
 }
 
 a {
@@ -294,14 +296,11 @@ a {
   justify-content: space-around;
 }
 
-.navigation li {
-  padding: 19px 0 22px 0;
-}
-
 .navigation a {
   color: #ffffff;
   line-height: 18px;
 
+  display: block;
   padding: 18px 33px 22px 33px;
 }
 
@@ -388,6 +387,19 @@ a {
   width: 620px;
 }
 
+.slide {
+  position: relative;
+}
+
+.slide__img {
+  position: absolute;
+  z-index: -1;
+}
+
+.slide--punchers {
+  display: none;
+}
+
 .slide__title {
   font-size: 36px;
   line-height: 36px;
@@ -413,10 +425,10 @@ a {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title-block__more {
-  align-self: center;
   width: 253px;
 }
 
@@ -492,6 +504,14 @@ a {
 
   padding-top: 63px;
   padding-bottom: 102px;
+}
+
+.services__description {
+  display: none;
+}
+
+.services__description--delivery {
+  display: block;
 }
 
 .services__content {
@@ -615,6 +635,15 @@ a {
 }
 
 /*Modal Write Us*/
+
+.modal {
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50);
+}
 
 .write-us,
 .added-notification {
