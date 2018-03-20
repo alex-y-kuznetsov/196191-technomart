@@ -464,9 +464,6 @@ a {
 
 .features__wrapper {
   display: flex;
-}
-
-.features__wrapper {
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -479,7 +476,7 @@ a {
 .features__item {
   width: 300px;
 
-  padding: 23px;
+  padding: 22px;
 }
 
 .features__title {
@@ -489,10 +486,15 @@ a {
   font-weight: bold;
 
   margin: 0;
+  display: block;
+  padding-bottom: 10px;
 }
 
 .features__more {
   background-color: rgba(0, 0, 0, 0.1);
+
+  width: 135px;
+  display: block;
 }
 
 .features__more:hover {
