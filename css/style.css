@@ -79,6 +79,7 @@ a {
 
 .utilities__container {
   display: flex;
+  align-items: center;
 }
 
 .utilities a {
@@ -102,12 +103,33 @@ a {
 
 .utilities__search {
     width: 270px;
+    position: relative;
 }
 
 .utilities__search input {
   background-color: #293449;
   color: #ffffff;
   width: 100%;
+
+  border: none;
+  padding: 11px 0 12px 50px;
+}
+
+.utilities__search button {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../img/icon-search--white.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.3;
 }
 
 .utilities__search input:focus {
@@ -124,9 +146,22 @@ a {
 
   display: block;
   width: 220px;
+  position: relative;
 
-  padding: 11px 0 12px 0;
+  padding: 11px 0 7px 0;
   text-align: center;
+}
+
+.logo__link::after {
+  display: block;
+  content: "";
+  background-color: #b52933 ;
+
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 100%;
 }
 
 .logo__link:hover {
@@ -142,10 +177,52 @@ a {
 .utilities__order {
   width: 150px;
 
-  padding: 11px 0 12px 0;
+  padding: 12px 0;
   text-align: center;
 }
 
+.utilities__bookmarks,
+.utilities__cart {
+  padding-left: 20px;
+
+  position: relative;
+}
+
+.utilities__bookmarks::before,
+.utilities__cart::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.utilities__bookmarks::before {
+  background-image: url("../img/icon-bookmark--white.svg");
+}
+
+.utilities__cart::before {
+  background-image: url("../img/icon-cart--white.svg");
+}
+
+.utilities__bookmarks:hover::before,
+.utilities__cart:hover::before,
+.utilities__search input:hover .utilities__search button {
+  opacity: 1;
+}
+
+.utilities__search input:focus {
+  color: #000000;
+}
+
+.utilities__search input:focus .utilities__search button {
+  background-image: url("../img/icon-search--focus.svg");
+  background-repeat: no-repeat;
+}
 
 .utilities__order {
   background-color: #63a63e;
@@ -163,7 +240,7 @@ a {
 
 .user-block {
   padding-top: 46px;
-  padding-bottom: 44px;
+  padding-bottom: 34px;
 }
 
 .user-block,
@@ -186,7 +263,13 @@ a {
   line-height: 23px;
   font-style: italic;
 
-  width: 200px;
+  width: 250px;
+  margin: 0;
+  padding-left: 50px;
+}
+
+.user-block__motto p {
+  padding: 0;
   margin: 0;
 }
 
@@ -194,9 +277,24 @@ a {
   font-size: 21px;
   line-height: 21px;
 
+  display: block;
+  position: relative;
+
   border: 3px solid #ffffff;
-  padding: 11px 0 8px 0;
+  padding: 10px 0 8px 70px;
   width: 270px
+}
+
+.user-block__phone::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
 }
 
 .user-block__address {
@@ -205,7 +303,7 @@ a {
   color: #32425c;
 
   margin: 0;
-  padding-top: 18px;
+  padding: 5px 10px;
 }
 
 .user-block__controls {
@@ -229,6 +327,40 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  text-align: center;
+
+  display: block;
+}
+
+.user-block__login {
+  padding-left: 45px;
+  position: relative;
+}
+
+.user-block__login::before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 12px;
+  top: 13px;
+
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user-block__login:hover::before {
+  opacity: 1;
+}
+
+.user-block__login:active::before {
+  opacity: 0.3;
+}
+
+.user-block__controls li:first-child {
+  margin-right: 10px;
 }
 
 .user-block__secondary {
@@ -296,12 +428,16 @@ a {
   justify-content: space-around;
 }
 
+.navigation--header ul {
+  border-bottom: 5px solid #293449;
+}
+
 .navigation a {
   color: #ffffff;
   line-height: 18px;
 
   display: block;
-  padding: 18px 33px 22px 33px;
+  padding: 18px 33px 18px 33px;
 }
 
 .navigation a:hover {
@@ -642,7 +778,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50);
+  transform: translate(-50%, -50%);
 }
 
 .write-us,
