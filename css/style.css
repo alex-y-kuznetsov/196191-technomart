@@ -730,7 +730,7 @@ a {
 .title-block {
   background-color: #f9f5f0;
 
-  padding: 28px 26px;
+  padding: 24px 26px;
 
   display: flex;
   justify-content: space-between;
@@ -759,7 +759,25 @@ a {
 }
 
 .shop-item {
-  font-family: "PT Sans", Arial. sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
+
+  border: 1px solid #eaeaea;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-item__image {
+  margin-bottom: 40px;
+}
+
+.shop-item__title,
+.shop-item__price-before,
+.shop-item__buy {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .shop-item__title {
@@ -776,6 +794,8 @@ a {
   text-decoration: line-through;
   text-transform: uppercase;
   font-weight: bold;
+
+  padding: 10px 0;
 }
 
 .shop-item__buy {
@@ -785,6 +805,30 @@ a {
   background-color: #ee3643;
   text-transform: uppercase;
   font-weight: bold;
+
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-right: 53px;
+  padding: 10px 21px 10px 35px;
+  width: 125px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  position: relative;
+}
+
+.shop-item__buy::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 19px 0 19px 20px;
+  border-color: transparent transparent transparent #ee3642;
 }
 
 /*Manufacturers*/
@@ -796,6 +840,8 @@ a {
 
 .manufacturers ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 
   display: flex;
   justify-content: space-between;
@@ -804,6 +850,23 @@ a {
 
 .manufacturers li {
   width: 220px;
+}
+
+.manufacturers li:first-child {
+  margin-bottom: 20px;
+}
+
+.manufacturers a {
+  display: block;
+  border: 1px solid #eaeaea;
+  text-align: center;
+
+  min-height: 145px;
+  display: flex;
+}
+
+.manufacturers img {
+  margin: auto;
 }
 
 /*Services*/
