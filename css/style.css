@@ -497,7 +497,7 @@ a {
 
 .navigation a {
   color: #ffffff;
-  line-height: 18px;
+/*  line-height: 18px;*/
 
   display: block;
   padding: 18px 33px 18px 33px;
@@ -1147,6 +1147,15 @@ a {
 
 /*Footer*/
 
+.logo__link--footer {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.logo__link--footer::after {
+  bottom: 0;
+}
+
 .footer__navigation,
 .footer__catalog {
   background-color: #32425c;
@@ -1154,7 +1163,11 @@ a {
 }
 
 .footer__navigation {
-  padding-bottom: 30px;
+  padding-bottom: 29px;
+}
+
+.footer__contacts {
+  padding-left: 4px;
 }
 
 .footer__catalog {
@@ -1173,6 +1186,17 @@ a {
 .navigation--footer {
   display: flex;
   justify-content: space-between;
+  padding-top: ;
+}
+
+.navigation--footer ul {
+  padding-top: 37px;
+}
+
+.navigation--footer a {
+  padding: 0 0 0 59px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .navigation--footer a:hover,
@@ -1197,10 +1221,6 @@ a {
   width: 540px;
 }
 
-.jump-to li {
-  padding: 19px 0 22px 0;;
-}
-
 .reference {
   background-color: #293449;
   color: #ffffff;
@@ -1218,14 +1238,11 @@ a {
 }
 
 .footer__address,
-.footer-phone,
+.footer__phone,
 .feedback {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-}
-
-.footer__phone {
   color: #ffffff;
 }
 
@@ -1253,10 +1270,12 @@ a {
 }
 
 .jump-to a {
-  tect-decoration: none;
+  text-decoration: none;
   color: #ffd180;
 
-  padding: 18px 20px 22px 20px;
+  padding: 0 0 0 15px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer__social {
@@ -1264,8 +1283,9 @@ a {
 
   padding: 0;
   margin: 0;
+  margin-left: 25px;
 
-  width: 133px;
+  width: 131px;
 
   display: flex;
   justify-content: space-between;
