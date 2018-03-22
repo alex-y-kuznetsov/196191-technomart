@@ -318,6 +318,10 @@ a {
   padding: 5px 10px;
 }
 
+.user-block__contacts--logged-in {
+  padding-left: 20px;
+}
+
 .user-block__controls {
   list-style: none;
 
@@ -377,7 +381,7 @@ a {
 
 .user-block__secondary {
   padding-top: 7px;
-  text-align: center;
+  padding-left: 18px;
 }
 
 .user-block__secondary a {
@@ -397,7 +401,7 @@ a {
   border-radius: 2px;
   background-color: #32425c;
   top: 8px;
-  left: 94px;
+  left: 90px;
 }
 
 .user-block__secondary a:hover {
@@ -409,11 +413,11 @@ a {
 }
 
 .user-block__my-orders {
-  margin-right: 34px;
+  margin-right: 28px;
 }
 
 .user-block__profile {
-  padding: 11px 70px 11px 48px;
+  padding: 12px 66px 11px 48px;
   display: block;
   position: relative;
 }
@@ -1290,6 +1294,18 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__social a {
+  display: flex;
+  width: 41px;
+  height: 41px;
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.footer__social img {
+  margin: auto;
 }
 
 /*Catalog*/
