@@ -746,6 +746,7 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
+  font-weight: normal;
 }
 
 /*Popular*/
@@ -874,16 +875,22 @@ a {
 .services {
   background-color: #f4f8f9;
 
-  padding-top: 63px;
-  padding-bottom: 102px;
+  padding-top: 65px;
 }
 
 .services__description {
   display: none;
+
+  width: 620px;
+  padding-bottom: 130px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .services__description--delivery {
   display: block;
+
+  background-image: url("../img/services-delivery.png");
 }
 
 .services__content {
@@ -895,10 +902,19 @@ a {
   flex-direction: column;
 
   margin-right: 80px;
+  position: relative;
 }
 
-.services__button {
-  width: 240px;
+.services__menu::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 280px;
+  top: -40px;
+  right: 0;
+  background-image: url(../img/divider.png);
+  background-repeat: no-repeat;
 }
 
 .services__title,
@@ -909,26 +925,29 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
+  font-weight: normal;
 
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
 
 .services__info {
   margin: 0;
   width: 400px;
 
-  padding-bottom: 70px;
+  padding-bottom: 67px;
 }
 
 .services__info,
 .resume__info,
 .contacts__info,
 .fact__info {
-  font-family: "PT Sans", Arial. sans-serif;
-  foont-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
   line-height: 24px;
   color: #000000;
+
+  margin: 0;
 }
 
 .services__button {
@@ -936,8 +955,15 @@ a {
   color: #ffffff;
   font-size: 21px;
   line-height: 30px;
+  font-weight: bold;
 
-  padding: 15px 0 21px 22px;
+  width: 240px;
+  padding: 15px 0 16px 22px;
+  border-bottom: 1px solid #4d637b;
+}
+
+.services__button:last-child {
+  border-bottom: none;
 }
 
 .services__button--active {
@@ -960,8 +986,10 @@ a {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  font-weight: normal;
 
   margin: 0;
+  padding-bottom: 25px;
 }
 
 .description__info {
@@ -969,6 +997,19 @@ a {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+
+  margin: 0;
+  width: 275px;
+}
+
+.resume__info--wide {
+  width: 525px;
+  padding-bottom: 25px;
+}
+
+.resume__info--narrow {
+  width: 390px;
+  padding-bottom: 20px;
 }
 
 /*About Us*/
@@ -991,19 +1032,50 @@ a {
   width: 300px;
 }
 
+.contacts__info {
+  width: 180px;
+  padding-bottom: 30px;
+}
+
+.contacts__enlarge-map {
+  display: block;
+  padding-bottom: 36px;
+}
+
+.contacts__contact-us {
+  display: block;
+}
+
 .resume__transport {
   list-style: none;
   padding: 0;
+  padding-left: 36px;
+  padding-bottom: 15px;
   margin: 0;
 }
 
 .resume__transport li {
   font-size: 18px;
   line-height: 20px;
+  padding-bottom: 20px;
+
+  position: relative;
+}
+
+.resume__transport li::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 9px;
+  height: 2px;
+  width: 25px;
+  background-color: #ee3643;
 }
 
 .resume__more {
   width: 220px;
+  display: block;
 }
 
 /*Modal Write Us*/
