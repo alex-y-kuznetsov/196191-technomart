@@ -19,8 +19,8 @@
           </div>
           <div class="utilities__search">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <input type="search" name="search-field" placeholder="Поиск:">
-              <button type="submit"></button>
+              <input class="search-field" type="search" name="search-field" placeholder="Поиск:">
+              <button class="search-button" type="submit"></button>
             </form>
           </div>
           <a href="#" class="utilities__bookmarks">Закладки: 0</a>
@@ -169,8 +169,8 @@
                   <li><a href="#" class="sort-by__option sort-by__option--inactive">По типу</a></li>
                   <li><a href="#" class="sort-by__option sort-by__option--inactive">По функционалу</a></li>
                 </ul>
-                <ul>
-                  <li><a href="#" class="sort-by__order sort-by__order--up" aria-label="Сортировка снизу вверх"></a></li>
+                <ul class="sort-by__direction">
+                  <li><a href="#" class="sort-by__order sort-by__order--up--active sort-by__order--up" aria-label="Сортировка снизу вверх"></a></li>
                   <li><a href="#" class="sort-by__order sort-by__order--down" aria-label="Сортировка сверху вниз"></a></li>
                 </ul>
               </section>
@@ -272,13 +272,13 @@
       <section class="navigation footer__navigation">
         <div class="footer__container">
           <div class="logo logo--footer">
-            <a class="logo__link logo__link--footer">Техномарт</a>
+            <a href="index.html" class="logo__link logo__link--footer">Техномарт</a>
           </div>
           <nav class="navigation--footer">
             <ul>
-              <li><a href="#">Компания</a></li>
+              <li><a href="index.html">Компания</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
+              <li><a>Каталог</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -313,7 +313,7 @@
           </ul>
           <div class="feedback">
             <p class="feedback__email"><b>Обратная связь:</b><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-            <p class="feedback__developed-by"><b>Разработано —</b><a href="htmlacademy.ru">htmlacademy.ru</a></p>
+            <p class="feedback__developed-by"><b>Разработано —</b><a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
           </div>
         </div>
       </section>
