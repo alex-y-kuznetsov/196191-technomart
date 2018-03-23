@@ -1694,29 +1694,6 @@ input[id^="radio"]:disabled ~ label::before {
   margin: 0;
 }
 
-/*Иконки фоном*/
-/*.sort-by__direction {
-  display: flex;
-  width: 42px;
-  justify-content: space-between;
-}
-
-.sort-by__order {
-  background-repeat: no-repeat;
-  display: block;
-  width: 11px;
-  height: 10px;
-}
-
-.sort-by__order--up {
-  background-image: url("../img/icon-up-dir.svg");
-}
-
-.sort-by__order--down {
-  background-image: url ("");
-}
-*/
-/*Иконки на псевдоэлементах*/
 .sort-by__order {
   position: relative;
 }
