@@ -1313,8 +1313,8 @@ a {
 /*Breadcrumbs*/
 
 .breadcrumbs {
-  padding-top: 23px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .breadcrumbs ul {
@@ -1349,9 +1349,10 @@ a {
   font-size: 30px;
   line-height: 30px;
   background-color: #f2f6f8;
+  font-weight: normal;
 
   margin: 0;
-  padding: 28px 0 28px 30px;
+  padding: 29px 0 29px 30px;
 }
 
 .shop-interface {
@@ -1381,9 +1382,10 @@ a {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: normal;
 
   margin: 0;
-  padding: 12px 17px 12px 19px;
+  padding: 11px 17px 11px 19px;
 }
 
 .price-range h4,
@@ -1441,19 +1443,22 @@ a {
   display: flex;
   justify-content: space-between;
 
-  padding: 12px 17px 12px 19px;
+  padding: 11px 17px 11px 19px;
 }
 
 .sort-by__title {
   margin: 0;
   margin-right: 80px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
 }
 
 .sort-by ul {
   list-style: none;
 
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 
   padding: 0;
   margin: 0;
@@ -1461,15 +1466,29 @@ a {
 
 .sort-by__options {
   width: 380px;
+  justify-content: flex-start;
 }
 
 .sort-by__option {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort-by__option--active {
+.sort-by__options li:first-child {
+  padding-right: 70px;
+}
+
+.sort-by__options li:nth-child(2) {
+  padding-right: 65px;
+}
+
+.sort-by__option--active,
+.sort-by__option:active {
   color: #ee3643;
   text-decoration: none;
+}
+
+.sort-by__option--inactive {
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sort-by__option:hover {
@@ -1480,6 +1499,10 @@ a {
 
 .shop-content {
   width: 700px;
+}
+
+.shop-items .shop-item {
+  margin-bottom: 20px;
 }
 
 .shop-items__pagination ul {
