@@ -1405,6 +1405,25 @@ img {
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
+
+  position: relative;
+}
+
+.breadcrumbs a::before {
+  position: absolute;
+  display: block;
+  content: "";
+
+  top: 2px;
+  left: -23px;
+  height: 12px;
+  width: 7px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs a[href="index.html"]::before {
+  content: none;
 }
 
 /*Catalog Page*/
@@ -1822,11 +1841,13 @@ input[id^="radio"]:disabled ~ label::before {
   text-transform: uppercase;
 }
 
-.shop-items__page:hover {
+.shop-items__page:hover,
+.filters__show:hover {
   border-color: #bdc6ca;
 }
 
-.shop-items__page:active {
+.shop-items__page:active,
+.filters__show:active {
   border-color: #ee3643;
 }
 
