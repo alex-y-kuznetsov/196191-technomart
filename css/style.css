@@ -568,7 +568,8 @@ img {
   position: relative;
 }
 
-.features__item--new::after {
+.features__item--new::after,
+.shop-item--new::after {
   display: block;
   content: "";
   position: absolute;
@@ -577,6 +578,7 @@ img {
   width: 60px;
   top: 0;
   right: 0;
+  z-index: 3;
 
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
@@ -784,10 +786,106 @@ img {
   width: 220px;
   display: flex;
   flex-direction: column;
+
+  position: relative;
+}
+
+.shop-item:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.shop-item:hover .shop-item__button-block {
+  z-index: 2;
+}
+
+.shop-item__button-block {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background-color: #ffffff;
+  padding: 42px 0 0px 0;
+}
+
+.shop-item__button-block a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+
+  width: 135px;
+  align-self: center;
+  padding: 9px 0;
+
+  border-radius: 3px;
+}
+
+.shop-item__buy-button {
+  border-bottom: 3px solid #367315;
+  background-color: #63a63e;
+  color: #ffffff;
+  margin-bottom: 5px;
+
+  position: relative;
+}
+
+.shop-item__buy-button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/icon-cart--button-box.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.shop-item__buy-button:hover {
+  background-color: #5fbb2d;
+}
+
+.shop-item__buy-button:hover::before{
+  opacity: 1;
+}
+
+.shop-item__buy-button:active {
+  background-color: #518534;
+  border-bottom-color: #518534;
+}
+
+.shop-item__buy-button:active::before {
+  opacity: 1;
+}
+
+.shop-item__bookmark-button {
+  border: 3px solid #63a63e;
+  color: #32425c;
+}
+
+.shop-item__bookmark-button:hover {
+  border-color: #32425c;
+  color: #32425c;
+}
+
+.shop-item__bookmark-button:active {
+  border-color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.shop-item--new {
+  position: relative;
 }
 
 .shop-item__image {
   margin-bottom: 40px;
+
+  position: relative;
+  z-index: 1;
 }
 
 .shop-item__title,
