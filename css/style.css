@@ -450,7 +450,11 @@ a {
   opacity: 0.3;
 }
 
-.user-block__profile::after {
+.user-block__primary {
+  position: relative;
+}
+
+.user-block__logout {
   display: block;
   position: absolute;
   content: "";
@@ -465,7 +469,7 @@ a {
 }
 
 .user-block__profile:hover::before,
-.user-block__profile:hover::after {
+.user-block__logout:hover {
   opacity: 1;
 }
 
