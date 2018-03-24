@@ -29,10 +29,10 @@ a {
   text-decoration: none;
 }
 
-img {
+/*img {
   max-width: 100%;
   height: auto;
-}
+}*/
 
 .visually-hidden {
   position: absolute;
@@ -1006,15 +1006,66 @@ img {
   display: none;
 
   width: 620px;
-  padding-bottom: 130px;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
+.description__title {
+  color: #32425c;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.description__info {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  margin: 0;
+}
+
 .services__description--delivery {
   display: block;
+  padding-bottom: 134px;
 
   background-image: url("../img/services-delivery.png");
+}
+
+.description__info--delivery {
+  width: 275px;
+}
+
+.services__description--warranty {
+  padding-bottom: 110px;
+
+  background-image: url("../img/services-warranty.png");
+}
+
+.description__info--warranty {
+  width: 380px;
+}
+
+.services__description--credit {
+  padding-bottom: 113px;
+
+  background-image: url("../img/services-credit.png");
+}
+
+.description__info--credit {
+  width: 280px;
+
+  padding-bottom: 30px;
+}
+
+.description__apply {
+  width: 195px;
+  display: block;
 }
 
 .services__content {
@@ -1103,27 +1154,6 @@ img {
   background-color: #ffffff;
   color: #32425c;
   cursor: default;
-}
-
-.description__title {
-  color: #32425c;
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: uppercase;
-  font-weight: normal;
-
-  margin: 0;
-  padding-bottom: 25px;
-}
-
-.description__info {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
-
-  margin: 0;
-  width: 275px;
 }
 
 .resume__info--wide {
@@ -1856,6 +1886,7 @@ input[id^="radio"]:disabled ~ label::before {
   display: none;
 
   position: fixed;
+  z-index: 4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1874,6 +1905,7 @@ input[id^="radio"]:disabled ~ label::before {
   border: none;
   cursor: pointer;
   position: absolute;
+  z-index: 5;
   right: 9px;
   top: 9px;
 
@@ -1970,7 +2002,7 @@ input[id^="radio"]:disabled ~ label::before {
   line-height: 30px;
 
   position: relative;
-  z-index: -1;
+/*  z-index: -1;*/
 
   padding: 70px 126px 68px 179px;
   margin: 0;
