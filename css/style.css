@@ -515,14 +515,14 @@ a {
 
 .navigation--header ul {
   border-bottom: 5px solid #293449;
+  padding: 0 22px;
 }
 
 .navigation a {
   color: #ffffff;
-/*  line-height: 18px;*/
 
   display: block;
-  padding: 18px 33px 18px 33px;
+  padding: 18px 28px;
 }
 
 .navigation a[href]:hover {
@@ -1352,6 +1352,7 @@ a {
 
 .feedback p {
   margin: 0;
+  margin-right: 15px;
 }
 
 .feedback__email a,
