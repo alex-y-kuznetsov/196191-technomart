@@ -29,11 +29,6 @@ a {
   text-decoration: none;
 }
 
-/*img {
-  max-width: 100%;
-  height: auto;
-}*/
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -795,11 +790,10 @@ a {
 }
 
 .shop-item__button-block {
-  /*display: flex;*/
   flex-direction: column;
   position: absolute;
+  top: 0;
   width: 100%;
-  /*z-index: -1;*/
   display: none;
   background-color: #ffffff;
   padding: 42px 0 42px 0;
@@ -984,6 +978,8 @@ a {
 
   min-height: 145px;
   display: flex;
+
+  position: relative;
 }
 
 .manufacturers a:hover {
@@ -995,7 +991,10 @@ a {
 }
 
 .manufacturers img {
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*Services*/
