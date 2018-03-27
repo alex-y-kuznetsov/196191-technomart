@@ -82,7 +82,7 @@
 
             <div class="slider features__slider">
 
-              <article class="slide slide--drills">
+              <article class="slide slide--drills slide-show">
                 <img src="img/slider-drills.jpg" class="slide__img" alt="Дрели">
                 <h1 class="slide__title">Дрели</h1>
                 <span class="slide__description">Соседям на радость!</span>
@@ -226,7 +226,7 @@
               <a href="#" class="services__button services__button--credit">Кредит</a>
             </div>
 
-            <div class="services__description description services__description--delivery">
+            <div class="services__description description services__description--delivery services-show">
               <h3 class="description__title">Доставка</h3>
               <p class="description__info description__info--delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </div>
@@ -336,12 +336,13 @@
     <div class="modal map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <button class="close-modal" type="button">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522174259138" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
       <img src="img/map--large.png" width="940" height="447" class="contacts__map--large" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </div>
 
     <div class="modal write-us">
       <form class="write-us__form" action="https://echo.htmlacademy.ru" method="get">
-        <button class="close-modal" type="button">Закрыть</button>
+        <button class="close-modal close-modal--contact-us" type="button">Закрыть</button>
 
         <div class="write-us__personal-data">
 
@@ -367,5 +368,17 @@
       </form>
     </div>
 
+    <div class="modal added-notification">
+      <button class="close-modal" type="button">Закрыть</button>
+      <p class="added-notification__success">Товар добавлен в корзину</p>
+      <div class="modal__button">
+        <div class="added-notification__button-wrapper">
+          <a href="#" class="btn btn--red added-notification__order">Оформить заказ</a>
+          <button class="added-notification__continue-shopping">Продолжить покупки</button>
+        </div>
+      </div>
+    </div>
+
+  <script src="js/scripts.js"></script>
   </body>
 </html>

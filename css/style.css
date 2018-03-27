@@ -657,8 +657,12 @@ a {
   z-index: -1;
 }
 
-.slide--punchers {
+.slide {
   display: none;
+}
+
+.slide-show {
+  display: block;
 }
 
 .slide__title {
@@ -1033,9 +1037,12 @@ a {
   margin: 0;
 }
 
-.services__description--delivery {
+.services-show {
   display: block;
-  padding-bottom: 130px;
+}
+
+.services__description--delivery {
+  padding-bottom: 131px;
 
   background-image: url("../img/services-delivery.png");
 }
@@ -1045,7 +1052,7 @@ a {
 }
 
 .services__description--warranty {
-  padding-bottom: 110px;
+  padding-bottom: 107px;
 
   background-image: url("../img/services-warranty.png");
 }
@@ -1055,7 +1062,7 @@ a {
 }
 
 .services__description--credit {
-  padding-bottom: 113px;
+  padding-bottom: 109px;
 
   background-image: url("../img/services-credit.png");
 }
@@ -1439,6 +1446,7 @@ a {
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
+  color: #000000;
 
   position: relative;
 }
@@ -1675,9 +1683,9 @@ label[for^="radio"]:hover::before {
   opacity: 0.5;
 }
 
-input[id^="checkbox"]:disabled ~ label::before,
-input[id^="radio"]:disabled ~ label::before {
-  opacity: 0.1;
+input[id^="checkbox"]:disabled ~ label,
+input[id^="radio"]:disabled ~ label {
+  opacity: 0.3;
 }
 
 .filters__show {
@@ -1999,6 +2007,22 @@ input[id^="radio"]:disabled ~ label::before {
   border-top: none;
 }
 
+.map iframe {
+  position: relative;
+  z-index: 4;
+
+  border: none;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
 /*Modal Notification*/
 
 .added-notification__success {
@@ -2054,4 +2078,56 @@ input[id^="radio"]:disabled ~ label::before {
 
 .added-notification__continue-shopping:active {
   background-color: #b2b2b2;
+}
+
+.modal-show {
+  display: block;
+
+  animation: emerge 0.1s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+/*Modal Animations*/
+
+@keyframes emerge {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0.3;
+  }
+
+  66% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
