@@ -743,8 +743,11 @@ a {
   border: 2px solid #ffffff;
 }
 
+.slider__pager a:first-child {
+  margin-right: 10px;
+}
+
 .pager__button--active {
-  margin-left: 10px;
   background-color: #ee3643;
 }
 

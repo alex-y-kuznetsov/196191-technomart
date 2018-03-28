@@ -20,6 +20,7 @@ var sliderNext = document.querySelector(".cycle-next");
 var sliderPrev = document.querySelector(".cycle-prev");
 var slideDrills = document.querySelector(".slide--drills");
 var slidePunchers = document.querySelector(".slide--punchers");
+var sliderPins = document.querySelectorAll(".pager__button");
 
 var servicesDeliverySwitch = document.querySelector(".services__button--delivery");
 var servicesWarrantySwitch = document.querySelector(".services__button--warranty");
@@ -120,12 +121,20 @@ sliderNext.addEventListener("click", function (evt) {
   evt.preventDefault();
   slideDrills.classList.toggle("slide-show");
   slidePunchers.classList.toggle("slide-show");
+
+  for (var i = 0; i <= sliderPins.length; i++) {
+    sliderPins[i].classList.toggle("pager__button--active");
+  }
 });
 
 sliderPrev.addEventListener("click", function (evt) {
   evt.preventDefault();
   slideDrills.classList.toggle("slide-show");
   slidePunchers.classList.toggle("slide-show");
+
+  for (var i = 0; i <= sliderPins.length; i++) {
+    sliderPins[i].classList.toggle("pager__button--active");
+  }
 });
 
 
