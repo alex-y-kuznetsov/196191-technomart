@@ -122,7 +122,7 @@ sliderNext.addEventListener("click", function (evt) {
   slideDrills.classList.toggle("slide-show");
   slidePunchers.classList.toggle("slide-show");
 
-  for (var i = 0; i <= sliderPins.length; i++) {
+  for (var i = 0; i < sliderPins.length; i++) {
     sliderPins[i].classList.toggle("pager__button--active");
   }
 });
@@ -132,7 +132,7 @@ sliderPrev.addEventListener("click", function (evt) {
   slideDrills.classList.toggle("slide-show");
   slidePunchers.classList.toggle("slide-show");
 
-  for (var i = 0; i <= sliderPins.length; i++) {
+  for (var i = 0; i < sliderPins.length; i++) {
     sliderPins[i].classList.toggle("pager__button--active");
   }
 });
