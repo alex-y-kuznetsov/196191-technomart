@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -117,23 +117,23 @@
                     <ul>
                       <li>
                         <input id="checkbox1" type="checkbox" value="Bosch" checked>
-                        <label for="checkbox1">Bosch</label>
+                        <label for="checkbox1" tabindex="0">Bosch</label>
                       </li>
                       <li>
                         <input id="checkbox2" type="checkbox" value="Интерскол">
-                        <label for="checkbox2">Интерскол</label>
+                        <label for="checkbox2" tabindex="0">Интерскол</label>
                       </li>
                       <li>
                         <input id="checkbox3" type="checkbox" value="Makita" checked>
-                        <label for="checkbox3">Makita</label>
+                        <label for="checkbox3" tabindex="0">Makita</label>
                       </li>
                       <li>
                         <input id="checkbox4" type="checkbox" value="DeWALT">
-                        <label for="checkbox4">DeWALT</label>
+                        <label for="checkbox4" tabindex="0">DeWALT</label>
                       </li>
                       <li>
                         <input id="checkbox5" type="checkbox" value="Hitachi">
-                        <label for="checkbox5">Hitachi</label>
+                        <label for="checkbox5" tabindex="0">Hitachi</label>
                       </li>
                     </ul>
                   </fieldset>
@@ -145,11 +145,11 @@
                     <ul>
                       <li>
                         <input id="radio1" name="power" type="radio" value="Аккумуляторные" checked>
-                        <label for="radio1">Аккумуляторные</label>
+                        <label for="radio1" tabindex="0">Аккумуляторные</label>
                       </li>
                       <li>
                         <input id="radio2" name="power" type="radio" value="Сетевые">
-                        <label for="radio2">Сетевые</label>
+                        <label for="radio2" tabindex="0">Сетевые</label>
                       </li>
                     </ul>
                   </fieldset>
@@ -274,7 +274,9 @@
                   <a href="#" class="shop-item__buy">12500 Р.</a>
                 </article>
 
-                <div class="shop-items__pagination">
+              </section>
+
+                <div class="shop-content__pagination">
                   <ul>
                     <li><a class="shop-items__page shop-items__page--current">1</a></li>
                     <li><a href="#" class="shop-items__page">2</a></li>
@@ -283,7 +285,6 @@
                   </ul>
                 </div>
 
-              </section>
             </div>
           </div>
 

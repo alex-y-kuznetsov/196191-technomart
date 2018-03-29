@@ -36,7 +36,6 @@ try {
 
 // Открытие окна обратной связи
 if (contactModal) {
-
   var closeContactModal = contactModal.querySelector(".close-modal--contact-us");
   var userName = contactModal.querySelector("#write-us__name");
   var contactForm = contactModal.querySelector(".write-us__form");
@@ -91,13 +90,11 @@ if (contactModal) {
       }
     }
   });
-
 };
 
 
 // Открытие карты
 if (mapModal) {
-
   var closeMapModal = mapModal.querySelector(".close-modal");
 
   openMapModal.addEventListener("click", function (evt) {
@@ -120,13 +117,11 @@ if (mapModal) {
       }
     }
   });
-
 };
 
 
 // Переключение слайдов в слайдере
 if (slideDrills && slidePunchers) {
-
   sliderNext.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideDrills.classList.toggle("slide-show");
@@ -146,13 +141,11 @@ if (slideDrills && slidePunchers) {
       sliderPins[i].classList.toggle("pager__button--active");
     }
   });
-
 };
 
 
 // Переключение табов в сервисах
 if (servicesDeliveryBlock && servicesWarrantyBlock && servicesCreditBlock) {
-
   servicesDeliverySwitch.addEventListener("click", function (evt) {
     evt.preventDefault();
     if (servicesWarrantyBlock.classList.contains("services-show")) {
@@ -209,13 +202,11 @@ if (servicesDeliveryBlock && servicesWarrantyBlock && servicesCreditBlock) {
     servicesCreditBlock.classList.add("services-show");
     servicesCreditSwitch.classList.add("services__button--active");
   });
-
 };
 
 
 // Добавление товара в корзину
 if (addedNotification) {
-
   var closeAddedNotification = addedNotification.querySelector(".close-modal");
   var continueShopping = addedNotification.querySelector(".added-notification__continue-shopping");
 
@@ -244,5 +235,4 @@ if (addedNotification) {
       }
     }
   });
-
 };
