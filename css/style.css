@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -286,7 +286,8 @@ a {
 
   width: 250px;
   margin: 0;
-  padding-left: 50px;
+  padding-left: 52px;
+  padding-top: 2px;
 }
 
 .user-block__motto p {
@@ -681,13 +682,13 @@ a {
   color: #ffffff;
 
   padding-left: 24px;
-  padding-bottom: 125px;
+  padding-bottom: 120px;
   display: block;
 }
 
 .slide__link {
   margin-left: 24px;
-  margin-bottom: 18px;
+  margin-bottom: 23px;
   width: 195px;
   display: block;
 }
@@ -704,8 +705,8 @@ a {
 }
 
 .cycle-prev {
-  top: 110px;
-  left: 20px;
+  top: 113px;
+  left: 25px;
   height: 40px;
   width: 30px;
 
@@ -714,8 +715,8 @@ a {
 }
 
 .cycle-next {
-  top: 110px;
-  right: 20px;
+  top: 113px;
+  right: 13px;
   height: 40px;
   width: 30px;
 
@@ -786,7 +787,7 @@ a {
 }
 
 .shop-item {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 
   border: 1px solid #eaeaea;
   width: 220px;
@@ -815,7 +816,7 @@ a {
 }
 
 .shop-item__button-block a {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1032,7 +1033,7 @@ a {
 }
 
 .description__info {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -1130,7 +1131,7 @@ a {
 .resume__info,
 .contacts__info,
 .fact__info {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -1445,7 +1446,7 @@ a {
 }
 
 .breadcrumbs a {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
@@ -1512,7 +1513,7 @@ a {
 
 .filters__title {
   background-color: #f7f3ec;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1524,7 +1525,7 @@ a {
 
 .price-range h4,
 .filters legend {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
@@ -1584,7 +1585,7 @@ a {
 }
 
 .price-range__output {
-  font-family: "PT Sans", Arial, sans-serif;;
+  font-family: "PT Sans", "Arial", sans-serif;;
   font-size: 17px;
   line-height: 30px;
 
@@ -1646,7 +1647,7 @@ a {
 .filters__brands label,
 .filters__power label {
   position: relative;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   cursor: pointer;
@@ -1701,7 +1702,7 @@ input[id^="radio"]:disabled ~ label {
   text-align: center;
   background: none;
   text-transform: uppercase;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   cursor: pointer;
@@ -1711,7 +1712,7 @@ input[id^="radio"]:disabled ~ label {
 
 .sort-by {
   text-transform: uppercase;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: #f7f3ec;
@@ -1851,7 +1852,7 @@ input[id^="radio"]:disabled ~ label {
 }
 
 .shop-items__page {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 
@@ -1980,7 +1981,7 @@ input[id^="radio"]:disabled ~ label {
 }
 
 .write-us__field {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -1997,7 +1998,7 @@ input[id^="radio"]:disabled ~ label {
 
 .write-us__send {
   border: none;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 
   display: block;
   width: 460px;
@@ -2065,7 +2066,7 @@ input[id^="radio"]:disabled ~ label {
 }
 
 .added-notification__continue-shopping {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   border: none;
